@@ -1,0 +1,28 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.dinios.app'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.dinios.app'
+        minSdk 24
+        targetSdk 35
+        versionCode 18
+        versionName '18.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.activity:activity:1.10.1'
+}
